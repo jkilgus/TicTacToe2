@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class game extends AppCompatActivity {
+public class Game extends AppCompatActivity {
     private Button exit;
 
     /**
@@ -27,7 +27,7 @@ public class game extends AppCompatActivity {
     /** Number of turns that have gone by */
     private int turnNumber;
 
-    /**If the game has a winner then true, if not, then false */
+    /**If the Game has a winner then true, if not, then false */
     private boolean winner;
 
 
@@ -187,7 +187,7 @@ public class game extends AppCompatActivity {
         TextView output = findViewById(R.id.game_state);
         if(gamePlays[0] != 0 && gamePlays[1] != 0 && gamePlays[2] != 0 && gamePlays[3] != 0 && gamePlays[4] != 0
                 && gamePlays[5] != 0 && gamePlays[6] != 0 && gamePlays[7] != 0 && gamePlays[8] != 0 && !winner) {
-            output.setText("Tie game!");
+            output.setText("Tie Game!");
         }
     }
 }
